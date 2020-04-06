@@ -1,0 +1,37 @@
+﻿<Module>
+  <Name value="Bannerlord Template"/>
+  <Id value="BannerlordTemplate"/>
+  <Version value="v1.0.0"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <Official value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="CustomBattle"/>
+    <DependedModule Id="StoryMode"/>
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="BannerlordTemplate"/>
+      <DLLName value="BannerlordTemplate.dll"/>
+      <SubModuleClassType value="BannelordTemplateSubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName type="1" id="Items" path="customitems"/>
+    </XmlNode>
+    <XmlNode>
+      <XmlName type="1" id="SPCultures" path="customcultures"/>
+    </XmlNode>
+    <XmlNode>
+      <XmlName type="1" id="NPCCharacters" path="customcharacters"/>
+    </XmlNode>
+  </Xmls>
+</Module>
